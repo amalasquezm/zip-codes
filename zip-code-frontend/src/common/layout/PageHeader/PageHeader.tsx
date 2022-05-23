@@ -9,7 +9,7 @@ export type PageHeaderProps = {
 const PageHeader = (props: PageHeaderProps) => {
   return (
     <Flex pb={{ base: 2, md: 4 }} alignItems="center">
-      <Heading as="h4" size="md">
+      <Heading as="h1" size="lg">
         {props.title}
       </Heading>
       <Spacer />

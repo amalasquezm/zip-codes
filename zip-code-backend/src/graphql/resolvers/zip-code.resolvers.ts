@@ -14,7 +14,7 @@ export const getZipCodeDetails = async (countryCode: string, zipCode: string): P
   }
 };
 
-const convertToZipCodeDetailsQueryable = (zipCode: ZipCode): ZipCodeDetailsQueryable => {
+export const convertToZipCodeDetailsQueryable = (zipCode: ZipCode): ZipCodeDetailsQueryable => {
   const places: PlaceQueryable[] = zipCode.places.map(place => ({
     name: place['place name'],
     longitude: place.longitude,
